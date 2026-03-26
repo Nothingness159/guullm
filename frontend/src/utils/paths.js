@@ -47,13 +47,13 @@ export default {
     },
   },
   github: () => {
-    return "https://github.com/Mintplex-Labs/anything-llm";
+    return "http://192.168.8.183:8081";//lsf
   },
   discord: () => {
-    return "https://discord.com/invite/6UyHPeGZAC";
+    return "https://guu.ru";//guu
   },
   docs: () => {
-    return "https://docs.anythingllm.com";
+    return "----";//map
   },
   chatModes: () => {
     return "https://docs.anythingllm.com/features/chat-modes";

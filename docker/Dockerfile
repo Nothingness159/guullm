@@ -60,10 +60,10 @@ WORKDIR /app
 # Puppeteer does not ship with an ARM86 compatible build for Chromium
 # so web-scraping would be broken in arm docker containers unless we patch it
 # by manually installing a compatible chromedriver.
-RUN echo "Need to patch Puppeteer x Chromium support for ARM86 - installing dep!" && \
-    curl -fSL https://webassets.anythingllm.com/chromium-1088-linux-arm64.zip -o chrome-linux.zip && \
-    unzip chrome-linux.zip && \
-    rm -rf chrome-linux.zip
+#RUN echo "Need to patch Puppeteer x Chromium support for ARM64 - installing dep!" && \
+#   curl -fSL https://github.com/Sparticuz/chromium/releases/download/v1088.0/chromium-v1088.0-linux-arm64.zip -o chrome-linux.zip && \
+#  unzip chrome-linux.zip && \
+# rm -rf chrome-linux.zip
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 ENV CHROME_PATH=/app/chrome-linux/chrome
